@@ -6,7 +6,7 @@ from test import encode
 from test import writer
 from test import marc8
 from test import xml_test
-
+from test import mixed
 
 def suite():
     test_suite = unittest.TestSuite()
@@ -17,6 +17,7 @@ def suite():
     test_suite.addTest(writer.suite())
     test_suite.addTest(marc8.suite())
     test_suite.addTest(xml_test.suite())
+    test_suite.addTest(mixed.suite())
     return test_suite
 
 runner = unittest.TextTestRunner()
